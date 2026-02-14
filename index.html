@@ -1,1 +1,293 @@
-Farooq
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ali Shehzad | Web Developer</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:#0f172a;
+    color:white;
+}
+
+.container{
+    width:90%;
+    max-width:1100px;
+    margin:auto;
+}
+
+header{
+    padding:20px 0;
+    position:sticky;
+    top:0;
+    background:#0f172a;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+nav h1{color:#38bdf8;}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{margin-left:20px;}
+
+nav ul li a{
+    text-decoration:none;
+    color:white;
+    transition:.3s;
+}
+
+nav ul li a:hover{color:#38bdf8;}
+
+/* HERO */
+
+.hero{
+    min-height:90vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.hero-content{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:50px;
+    flex-wrap:wrap;
+}
+
+.hero-text{
+    flex:1;
+}
+
+.hero-text h2{
+    font-size:45px;
+}
+
+.hero-text span{color:#38bdf8;}
+
+.hero-text p{
+    margin:20px 0;
+    color:#cbd5e1;
+    font-size:18px;
+}
+
+.btn{
+    display:inline-block;
+    padding:12px 25px;
+    background:#38bdf8;
+    color:#0f172a;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn:hover{background:white;}
+
+/* PROFILE IMAGE */
+
+.profile{
+    flex:1;
+    text-align:center;
+}
+
+.profile img{
+    width:260px;
+    height:260px;
+    object-fit:cover;
+    border-radius:50%;
+    border:5px solid #38bdf8;
+    box-shadow:0 0 40px #38bdf8;
+    transition:.4s;
+}
+
+.profile img:hover{
+    transform:scale(1.05);
+}
+
+/* SECTIONS */
+
+section{padding:80px 0;}
+
+.section-title{
+    text-align:center;
+    margin-bottom:40px;
+    font-size:32px;
+    color:#38bdf8;
+}
+
+.about{
+    text-align:center;
+    max-width:700px;
+    margin:auto;
+    color:#cbd5e1;
+}
+
+.skills{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:20px;
+}
+
+.skill-box{
+    background:#1e293b;
+    padding:20px;
+    text-align:center;
+    border-radius:10px;
+    transition:.3s;
+}
+
+.skill-box:hover{
+    transform:translateY(-5px);
+    background:#334155;
+}
+
+.projects{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.project-card{
+    background:#1e293b;
+    padding:20px;
+    border-radius:10px;
+    transition:.3s;
+}
+
+.project-card:hover{
+    transform:translateY(-5px);
+    background:#334155;
+}
+
+.project-card h3{color:#38bdf8;}
+
+.contact{text-align:center;}
+
+footer{
+    background:#1e293b;
+    text-align:center;
+    padding:20px;
+    color:#cbd5e1;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+nav ul{display:none;}
+
+.hero-content{
+    flex-direction:column-reverse;
+    text-align:center;
+}
+
+.hero-text h2{font-size:32px;}
+
+.profile img{
+    width:200px;
+    height:200px;
+}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="container">
+<nav>
+<h1>Ali Shehzad</h1>
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+</div>
+</header>
+
+<section class="hero">
+<div class="container hero-content">
+
+<div class="hero-text">
+<h2>Hi, I'm <span>Ali Shehzad</span></h2>
+<p>Professional Web Developer creating modern and responsive websites.</p>
+<a href="#contact" class="btn">Hire Me</a>
+</div>
+
+<div class="profile">
+<img src="image.jpg" alt="Profile Picture">
+</div>
+
+</div>
+</section>
+
+<section id="about">
+<div class="container">
+<h2 class="section-title">About Me</h2>
+<p class="about">
+I am a passionate web developer who builds clean, responsive and user-friendly websites using modern design principles.
+</p>
+</div>
+</section>
+
+<section id="skills">
+<div class="container">
+<h2 class="section-title">My Skills</h2>
+<div class="skills">
+<div class="skill-box">HTML5</div>
+<div class="skill-box">CSS3</div>
+<div class="skill-box">JavaScript</div>
+<div class="skill-box">Responsive Design</div>
+<div class="skill-box">UI/UX</div>
+<div class="skill-box">GitHub</div>
+</div>
+</div>
+</section>
+
+<section id="projects">
+<div class="container">
+<h2 class="section-title">Projects</h2>
+<div class="projects">
+<div class="project-card"><h3>Portfolio Website</h3><p>Personal responsive portfolio design.</p></div>
+<div class="project-card"><h3>Landing Page</h3><p>Business landing page UI.</p></div>
+<div class="project-card"><h3>E-commerce UI</h3><p>Modern shopping interface design.</p></div>
+</div>
+</div>
+</section>
+
+<section id="contact">
+<div class="container">
+<h2 class="section-title">Contact Me</h2>
+<div class="contact">
+<p>Email: your@email.com</p>
+<p>Phone: +92-000-0000000</p>
+<a href="#" class="btn">Download CV</a>
+</div>
+</div>
+</section>
+
+<footer>
+<p>© 2026 Ali Shehzad | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
